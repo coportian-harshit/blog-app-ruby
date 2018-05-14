@@ -17,8 +17,3 @@ workflows:
   build_only:
     jobs:
       - build
-
-notify:
-  webhooks:
-    # A list of hashes representing hooks. Only the url field is supported.
-    - url: https://hooks.slack.com/services/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
