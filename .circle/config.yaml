@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
         - name: Set Ruby Version
-        - command:  echo "ruby-2.4" > ~/.ruby-version
+        - command:  echo "ruby-2.4.4" > ~/.ruby-version
       - run:
         - name: Installing dependencies
         - command: bundle install
