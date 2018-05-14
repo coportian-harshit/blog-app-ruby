@@ -8,14 +8,13 @@ jobs:
       - checkout
       - run: bundle install
       - run: echo "hello"
-  # test:
-  #   docker:
-  #     - image: circleci/<language>:<version TAG>
-  #   steps:
-  #     - checkout
-  #     - run: <command>
 workflows:
   version: 2
   build_and_test:
     jobs:
       - build
+
+notify:
+  webhooks:
+    # A list of hashes representing hooks. Only the url field is supported.
+    - url: https://hooks.slack.com/services/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
