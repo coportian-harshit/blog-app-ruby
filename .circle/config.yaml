@@ -1,8 +1,9 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: circleci/ruby:2.4.4
+    machine:
+      ruby:
+        version: 2.4.4
     steps:
       - checkout
       - run: bundle install
