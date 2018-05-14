@@ -6,11 +6,15 @@ jobs:
         version: 2.4.4
     steps:
       - checkout
-      - run: bundle install
-      - run: echo "hello world"
+      - run:
+        - name: Installing dependencies
+        - command: bundle install
+      - run:
+        - name: Running echo
+        - command: echo "Hello"
 workflows:
   version: 2
-  build_and_test:
+  build_only:
     jobs:
       - build
 
