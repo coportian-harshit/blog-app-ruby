@@ -167,6 +167,11 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
+    rspec_junit_formatter (0.3.0)
+      rspec-core (>= 2, < 4, != 2.12.0)
     ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
@@ -236,6 +241,7 @@ DEPENDENCIES
   minitest-reporters
   puma (~> 3.11)
   rails (~> 5.2.0)
+  rspec_junit_formatter
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
@@ -247,7 +253,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.4.4p296
 
 BUNDLED WITH
    1.16.1
