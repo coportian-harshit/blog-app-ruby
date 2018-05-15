@@ -1,9 +1,8 @@
 version: 2
 jobs:
   build:
-    machine:
-      ruby:
-        version: 2.4.4
+    docker:
+      - image: ruby:2.4.4
     steps:
       - run:
         - name: Set Ruby Version
