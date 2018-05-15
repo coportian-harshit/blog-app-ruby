@@ -61,6 +61,8 @@ group :test do
   gem 'minitest-reporters'
   gem 'guard'
   gem 'guard-minitest'
+  # Required for stats collections in CirlcleCI
+  gem 'rspec_junit_formatter'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
